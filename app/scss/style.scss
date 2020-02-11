@@ -1,0 +1,21 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+ box-sizing: inherit;   
+}
+body{
+    font-family: serif;
+    font-weight: 700;
+    background-color: #123456;
+}
+.box{
+    display: flex;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0%;
+    overflow: hidden;
+    transition: all 3s;
+}
