@@ -27,7 +27,7 @@ let gulp = require('gulp'),
 
         ])
             .pipe(concat('libs.min.css'))
-            .pipe(cssmin())
+            .pipe(cssmin()) 
             .pipe(gulp.dest('app/css'))
     });
 
