@@ -7,7 +7,10 @@
     background-color: #fff;
 }
 
-.header__top {}
+.header__top {
+    position: relative;
+    overflow-x: hidden;
+}
 
 .header__top-inner {
     display: flex;
@@ -620,6 +623,28 @@
 .products .product__item{
     flex-basis: calc(25% - 30px);
     margin-left: 30px;
+    //animation-delay: 1s;
+    animation-duration: 2s;
+}
+.product__item{
+    &:nth-child(1),
+    &:nth-child(5),
+    &:nth-child(9){
+        animation-delay: 0.3s;
+    }
+    &:nth-child(2),
+    &:nth-child(6),
+    &:nth-child(10){
+        animation-delay: 0.5s;
+    }
+    &:nth-child(3),
+    &:nth-child(7),{
+        animation-delay: 0.7s;
+    }
+    &:nth-child(4),
+    &:nth-child(8){
+        animation-delay: 0.9s;
+    }
 }
 .product__item {
     max-width: 442px;
@@ -1808,6 +1833,42 @@ button.icon-unsorted {
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
+
+    .jq-selectbox {
+        width: 120px;
+    }
+
+    .jq-selectbox__select {
+        height: 40px;
+        padding: 0px 18px;
+        border: 1px solid #d7d7d7;
+        border-bottom-color: #d7d7d7;
+        border-radius: 0px;
+        background: #f9f9f9;
+        box-shadow: none;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 15px;
+        color: #707070;
+        text-shadow: none;
+        line-height: 40px;
+    }
+
+    .jq-selectbox__trigger-arrow {
+        border: none;
+        top: 0;
+        right: 20px;
+        line-height: 40px;
+        font-size: 15px;
+
+        &::before {
+            font-family: 'icomoon';
+            content: '\f0d7';
+        }
+    }
+
+    .jq-selectbox__trigger {
+        border-left: none;
+    }
 }
 
 .price__product {
@@ -2298,6 +2359,41 @@ button.icon-unsorted {
         background-color: #f9f9f9;
         border: 1px solid #dedede;
         padding: 0px 10px;
+    }
+    .jq-selectbox {
+        width: 540px;
+    }
+
+    .jq-selectbox__select {
+        height: 40px;
+        padding: 0px 18px;
+        border: 1px solid #d7d7d7;
+        border-bottom-color: #d7d7d7;
+        border-radius: 0px;
+        background: #f9f9f9;
+        box-shadow: none;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 15px;
+        color: #707070;
+        text-shadow: none;
+        line-height: 40px;
+    }
+
+    .jq-selectbox__trigger-arrow {
+        border: none;
+        top: 0;
+        right: 20px;
+        line-height: 40px;
+        font-size: 15px;
+
+        &::before {
+            font-family: 'icomoon';
+            content: '\f0d7';
+        }
+    }
+
+    .jq-selectbox__trigger {
+        border-left: none;
     }
 }
 

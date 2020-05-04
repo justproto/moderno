@@ -10,6 +10,7 @@ html {
 html,
 body {
     height: 100%;
+   
 }
 
 .wrapper {
@@ -45,7 +46,9 @@ body {
     line-height: 24px;
     color: $text;
     font-weight: 400;
+    position: relative;
     overflow-x: hidden;
+    min-width: 320px;
 }
 
 .container {
